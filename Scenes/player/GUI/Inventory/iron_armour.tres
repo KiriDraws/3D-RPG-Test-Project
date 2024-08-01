@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://c2xxer5sec7fe"]
+
+[ext_resource type="Texture2D" uid="uid://cauthr6phat51" path="res://Assets/16x16 RPG Item Pack/Item__58.png" id="1_ko1ir"]
+[ext_resource type="Script" path="res://Scripts/player/GUI/Inventory/item_data.gd" id="2_c3c13"]
+
+[resource]
+script = ExtResource("2_c3c13")
+type = 2
+item_name = "Iron Armour"
+item_damage = 1
+item_health = 0
+item_defense = 5
+stackable = false
+count = 0
+description = "This is Iron Armour"
+item_texture = ExtResource("1_ko1ir")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://nynua60buw18"]
+
+[ext_resource type="Script" path="res://Scripts/player/GUI/Inventory/item_data.gd" id="1_dqmyx"]
+
+[resource]
+script = ExtResource("1_dqmyx")
+type = 0
+item_name = "Iron Sword"
+item_damage = 0
+item_health = 0
+item_defense = 0
+stackable = false
+count = 0
+description = ""
