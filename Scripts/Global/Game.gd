@@ -40,5 +40,17 @@ func heal_player(amount: int) -> void:
 	player_health += amount
 	if player_health > player_health_max:
 		player_health = player_health_max
+		
+func gain_exp(exp_amount: int) ->void:
+	current_exp += exp_amount
+	while current_exp >= exp_to_next_level:
+		self.emit_signal("level_up")
+		player_level += 1
+		player_health_max += player_level*10
+		player_health = player_health_max
+		current_exp -= exp_to_next_level
+		exp_to_next_level = round(exp_to_next_level*1.3)
+		exp_to_next_level = exp_to_next_level * pow(1.2, player_level - 1)
+		
 	
 	

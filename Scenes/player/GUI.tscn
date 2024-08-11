@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bu5kbdlkffekx"]
+[gd_scene load_steps=6 format=3 uid="uid://bu5kbdlkffekx"]
 
 [ext_resource type="Script" path="res://Scripts/player/GUI/gui.gd" id="1_7tlka"]
 [ext_resource type="Texture2D" uid="uid://cjid80mokonss" path="res://Assets/ui_big_pieces.png" id="2_p3of1"]
 [ext_resource type="PackedScene" uid="uid://cj8fqpywgsp14" path="res://Scenes/player/GUI/Inventory/inventory.tscn" id="2_vr5nh"]
 [ext_resource type="PackedScene" uid="uid://kpaqutqstvnq" path="res://Scenes/player/GUI/profile.tscn" id="3_hie2n"]
+[ext_resource type="PackedScene" uid="uid://laow46rdyrw7" path="res://Scenes/player/GUI/shop.tscn" id="5_ogrnu"]
 
 [node name="GUI" type="CanvasLayer"]
 process_mode = 3
@@ -62,6 +63,8 @@ vertical_icon_alignment = 2
 layout_mode = 2
 text = "Profile"
 vertical_icon_alignment = 2
+
+[node name="shop" parent="." instance=ExtResource("5_ogrnu")]
 
 [connection signal="pressed" from="container/VBoxContainer/inventory_button" to="." method="_on_inventory_button_pressed"]
 [connection signal="pressed" from="container/VBoxContainer/profile_button" to="." method="_on_profile_button_pressed"]
